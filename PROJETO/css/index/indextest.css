@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    text-align: center;
+
+    /* Define o fundo inicial e animação */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: mudarFundo 40s infinite linear;
+}
+
+/* Definindo a animação de mudança de imagens */
+@keyframes mudarFundo {
+    0%   { background-image: url('/img/images.jpg'); }
+    25%  { background-image: url('/img/img1.webp'); }
+    50%  { background-image: url('/img/img2.webp'); }
+    75%  { background-image: url('img4.jpg'); }
+    100% { background-image: url('img1.jpg'); } /* Volta para a primeira imagem */
+}

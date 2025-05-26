@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/infografico/infografico.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Infográfico</title>
+</head>
+<body>
+<a href="/html/index/index.html" class="voltar"><strong>Home</strong></a>
+
+<div class="container">
+    <h2>Sistema sustentável para Goiana</h2>
+
+    <div class="infografico">
+       <div class="mapa"> <img src="/img/images2.jpg" alt="mapa"></div>
+
+       <div class="grafico">
+        <canvas id="pizzaChart"></canvas>
+       </div>
+    </div>
+
+    <div class="info">
+        <ul>
+            <il>População: <span id="populacao">897</span></il><br>
+            <il>Indústrias: <span id="industrias">987</span></il><br>
+            <il>Região: <span id="regiao"></span>678</il>
+        </ul>
+    </div>
+   
+    <button class="button" onclick="atualizar()">Atualizar Dados</button>
+</div>
+    
+   
+
+<script src="/js/infografico/infografico.js"></script>
+</body>
+</html>
